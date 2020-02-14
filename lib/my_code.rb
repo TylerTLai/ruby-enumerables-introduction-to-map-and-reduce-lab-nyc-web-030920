@@ -90,7 +90,7 @@ def reduce_to_all_true(arr)
 end
 
 
-def reduce_to_any(arr)
+def reduce_to_any_true(arr)
   
   arr_index = 0
   value = true
