@@ -90,23 +90,23 @@ def reduce_to_all_true(arr)
 end
 
 
-def reduce_to_any_true(arr)
+def reduce_to_any(arr)
   
   arr_index = 0
   value = true
-  
-  while arr_index < arr.length do
-    
-    if arr[arr_index] == false or nil 
-      
-      value = false
 
+ while arr_index < arr.length do
+    
+    if arr[arr_index] == true
+      value = true
+    else
+      value = false
     end 
     
-    arr_index += 1 
-  
-  end 
+    arr_index += 1
 
-   value
-  
-end 
+ end
+
+  value 
+
+end
